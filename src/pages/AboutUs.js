@@ -17,6 +17,8 @@ export default function AboutUs() {
 
   return (
     <div>
+      <br />
+      <h1>About us</h1>
       {agent.map((agent) => {
         return (
           <Agent
