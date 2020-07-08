@@ -6,12 +6,22 @@ import "../styling/Listings.css";
 
 export default function Listings() {
   const [houses, setHouses] = useState([]);
-  // const [filterBy, setFilterBy] = useState(true);
 
   function sortByPrice(houses_a, houses_b) {
     return houses_a.priceEuro - houses_b.priceEuro;
   }
+
   let sortedHouses = [...houses].sort(sortByPrice);
+
+  useEffect(() => {
+    const url =
+      "https://my-json-server.typicode.com/Codaisseur/listings-agents-data/listings";
+    const fetchData = async () => {
+      const response = await axios.get(url);
+      setHouses(response.data);
+    };
+    fetchData();
+  }, []);
 
   const priceHouses = houses.map((houses) => {
     return houses.priceEuro;
@@ -25,23 +35,17 @@ export default function Listings() {
   const minSquareM = Math.min.apply(Math, squareM);
   const maxSquareM = Math.max.apply(Math, squareM);
 
-  // let filtered = sortedHouses.filter((house) => {
-  //   return house.priceEuro > filterBy;
-  // });
+  const [value, setValue] = useState();
 
-  // const changeFilter = (event) => {
-  //   setFilterBy(event.target.value);
-  // };
+  function handleChange(event) {
+    setValue(event.target.value);
+  }
 
-  useEffect(() => {
-    const url =
-      "https://my-json-server.typicode.com/Codaisseur/listings-agents-data/listings";
-    const fetchData = async () => {
-      const response = await axios.get(url);
-      setHouses(response.data);
-    };
-    fetchData();
-  }, []);
+  const filterPrice = sortedHouses.filter((house) => {
+    if (house.priceEuro <= value || house.m2 >= value) {
+      return sortedHouses;
+    }
+  });
 
   return (
     <div>
@@ -52,10 +56,10 @@ export default function Listings() {
         maxP={maxPrice}
         minM={minSquareM}
         maxM={maxSquareM}
-        // onChange={changeFilter}
+        onChange={handleChange}
       />
 
-      {sortedHouses.map((houses) => {
+      {filterPrice.map((houses) => {
         return (
           <ListingDetails
             className="Listing"

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Sliders({ minP, maxP, minM, maxM, changeFilter }) {
+export default function Sliders({ minP, maxP, minM, maxM, onChange }) {
   return (
     <div>
       <form className="slider">
@@ -13,7 +13,7 @@ export default function Sliders({ minP, maxP, minM, maxM, changeFilter }) {
             min={minP}
             max={maxP}
             // value="price"
-            onChange={changeFilter}
+            onChange={onChange}
           />
           Max. 886k
         </label>
@@ -23,7 +23,7 @@ export default function Sliders({ minP, maxP, minM, maxM, changeFilter }) {
         <br />
         <label>
           Min. 44m2
-          <input type="range" min={minM} max={maxM} onChange={changeFilter} />
+          <input type="range" min={minM} max={maxM} onChange={onChange} />
           Max. 103m2
         </label>
       </form>

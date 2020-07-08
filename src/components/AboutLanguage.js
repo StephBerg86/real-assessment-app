@@ -61,7 +61,6 @@ export default function AboutLanguage() {
   if (languageId === "English") {
     return (
       <div>
-        About English
         <br />
         <h1>About us</h1>
         {filterAgent.map((agent) => {
@@ -82,7 +81,6 @@ export default function AboutLanguage() {
   } else if (languageId === "Dutch") {
     return (
       <div>
-        about dutch
         <br />
         <h1>About us</h1>
         {filterAgent.map((agent) => {
@@ -103,7 +101,6 @@ export default function AboutLanguage() {
   } else if (languageId === "German") {
     return (
       <div>
-        about german
         <br />
         <h1>About us</h1>
         {filterAgent.map((agent) => {
@@ -124,7 +121,6 @@ export default function AboutLanguage() {
   } else if (languageId === "Spanish") {
     return (
       <div>
-        Spanish
         <br />
         <h1>About us</h1>
         {filterAgent.map((agent) => {

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Agent from "../components/Agent";
-import ButtonAU from "../components/ButtonAU";
 import "../styling/AboutUs.css";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   const [agent, setAgent] = useState([]);
@@ -33,7 +34,14 @@ export default function AboutUs() {
           />
         );
       })}
-      <ButtonAU />
+      <p>
+        <Link to="/listings">
+          <Button className="auButton">See listings</Button>
+        </Link>
+        <Link to="/scheduleviewing">
+          <Button className="auButton">Schedule a viewing</Button>
+        </Link>
+      </p>
     </div>
   );
 }
