@@ -24,9 +24,8 @@ export default function AboutLanguage() {
   console.log("languageID", languageId);
 
   const filterLanguage = agent.filter((agents) => {
-    console.log("agents.lang", agents.languages);
-    if (agents.languages === languageId) {
-      return true;
+    if (agents.languages.includes(languageId)) {
+      return agent;
     } else {
       return false;
     }
