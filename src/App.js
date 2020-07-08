@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import Listings from "./pages/Listings";
 import ScheduleViewing from "./pages/ScheduleViewing";
+import AboutLanguage from "./components/AboutLanguage";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       </header>
       <Switch>
         <Route exact path="/aboutus" component={AboutUs} />
-
+        <Route path="/aboutus/:languageId" component={AboutLanguage} />
         <Route path="/listings" component={Listings} />
         <Route path="/scheduleviewing" component={ScheduleViewing} />
         <Route exact path="/" component={HomePage} />

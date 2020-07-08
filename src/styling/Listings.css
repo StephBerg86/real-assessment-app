@@ -1,0 +1,10 @@
+.Listing {
+  text-align: center;
+}
+
+.ListingDetails {
+  border: 0.1rem solid black;
+  margin: 1rem;
+  width: 20rem;
+  display: inline-block;
+}

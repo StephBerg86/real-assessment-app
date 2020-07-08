@@ -1,6 +1,6 @@
 import React from "react";
 import "../styling/HomePage.css";
-import Buttons from "../components/Buttons";
+import ButtonsHP from "../components/ButtonsHP";
 
 export default function HomePage() {
   return (
@@ -12,7 +12,7 @@ export default function HomePage() {
         src="https://blog.hubspot.com/hubfs/Sales_Blog/real-estate-business-compressor.jpg"
         alt="house"
       />
-      <Buttons />
+      <ButtonsHP />
     </div>
   );
 }
