@@ -32,15 +32,15 @@
 
 | 3. About us - Criteria                                                        | Points | Self | Evaluator |
 | ----------------------------------------------------------------------------- | ------ | ---- | --------- |
-| Agents are displayed with their name, image, motto and email                  | 1      |      |           |
-| The data for agents is fetched from the api, not hardcoded                    | 2      |      |           |
-| Only agents that speak the language specified in the path are displayed       | 2      |      |           |
-| Which agents to display is determined using Array.filter, not hardcoded       | 2      |      |           |
-| The buttons link to the correct pages                                         | 1      |      |           |
-| The text on the 2 buttons is translated to the language specified in the path | 1      |      |           |
-| There is a warning in the console regarding "key" props                       | -1     |      |           |
-| The value of the language is hardcoded, not dynamically taken from the path   | -1     |      |           |
-| Total                                                                         | 9      |      |           |
+| Agents are displayed with their name, image, motto and email                  | 1      | 1    |           |
+| The data for agents is fetched from the api, not hardcoded                    | 2      | 2    |           |
+| Only agents that speak the language specified in the path are displayed       | 2      | 2    |           |
+| Which agents to display is determined using Array.filter, not hardcoded       | 2      | 2    |           |
+| The buttons link to the correct pages                                         | 1      | 1    |           |
+| The text on the 2 buttons is translated to the language specified in the path | 1      | 1    |           |
+| There is a warning in the console regarding "key" props                       | -1     | 0    |           |
+| The value of the language is hardcoded, not dynamically taken from the path   | -1     | 0    |           |
+| Total                                                                         | 9      | 9    |           |
 
 | 4. Book viewing - Criteria                                                 | Points | Self | Evaluator |
 | -------------------------------------------------------------------------- | ------ | ---- | --------- |

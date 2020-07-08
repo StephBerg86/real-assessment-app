@@ -8,15 +8,11 @@ See `RULES.md`
 
 #### Start time:
 
-START_TIME
+Monday 17:00
 
 #### Deadline:
 
-END_TIME
-
-#### Retry assessment
-
-- Another assessment with comparable difficulty with a similar deadline
+Wednesday 18:00
 
 #### How to make and submit your homework
 
@@ -82,7 +78,7 @@ Overview of the entire api
 https://my-json-server.typicode.com/Codaisseur/listings-agents-data/
 
 Endpoints:
-
+0p
 GET /agents
 
 https://my-json-server.typicode.com/Codaisseur/listings-agents-data/agents
@@ -109,12 +105,12 @@ You will be provided with a wireframe that shows an overview of the app along wi
 
 | Criteria                                                                 | Points |
 | ------------------------------------------------------------------------ | ------ |
-| 3 Static Routes are implemented using react router                       | 1      |
-| There is 1 dynamic route implemented with a route parameter for language | 1      |
-| Each route renders a different component                                 | 1      |
-| A navbar can be used to navigate on all pages                            | 1      |
-| The navbar indicates what page you are on                                | 1      |
-| Total                                                                    | 5      |
+| 3 Static Routes are implemented using react router                       | 1 v    |
+| There is 1 dynamic route implemented with a route parameter for language | 1 v    |
+| Each route renders a different component                                 | 1 v    |
+| A navbar can be used to navigate on all pages                            | 1 v    |
+| The navbar indicates what page you are on                                | 1 v    |
+| Total                                                                    | 5 5    |
 
 Hint: to indicate what page a user is on use the `<NavLink />` component
 
@@ -142,12 +138,12 @@ https://github.com/ReactTraining/react-router/blob/master/packages/react-router-
 
 | Criteria                                                                           | Points |
 | ---------------------------------------------------------------------------------- | ------ |
-| 2 Buttons link to the correct pages                                                | 1      |
-| A select input is displayed on the page, with 4 options for languages              | 1      |
-| Selecting an option changes the text on the buttons                                | 1      |
-| Translation of the buttons works correctly for all 4 languages                     | 1      |
-| The `About us` button links to a different path depending on the language selected | 2      |
-| Total                                                                              | 6      |
+| 2 Buttons link to the correct pages                                                | 1 v    |
+| A select input is displayed on the page, with 4 options for languages              | 1 v    |
+| Selecting an option changes the text on the buttons                                | 1 v    |
+| Translation of the buttons works correctly for all 4 languages                     | 1 v    |
+| The `About us` button links to a different path depending on the language selected | 2 v    |
+| Total                                                                              | 6 6    |
 
 **Note:** Only the text of the buttons needs to be translated, other content on the page, e.g. title does not need to be translated
 
@@ -174,14 +170,14 @@ https://my-json-server.typicode.com/Codaisseur/listings-agents-data/agents
 
 | Criteria                                                                      | Points |
 | ----------------------------------------------------------------------------- | ------ |
-| Agents are displayed with their name, image, motto and email                  | 1      |
-| The data for agents is fetched from the api, not hardcoded                    | 2      |
-| Only agents that speak the language specified in the path are displayed       | 2      |
-| Which agents to display is determined using Array.filter, not hardcoded       | 2      |
-| The buttons link to the correct pages                                         | 1      |
-| The text on the 2 buttons is translated to the language specified in the path | 1      |
+| Agents are displayed with their name, image, motto and email                  | 1 v    |
+| The data for agents is fetched from the api, not hardcoded                    | 2 v    |
+| Only agents that speak the language specified in the path are displayed       | 2 v    |
+| Which agents to display is determined using Array.filter, not hardcoded       | 2 v    |
+| The buttons link to the correct pages                                         | 1 v    |
+| The text on the 2 buttons is translated to the language specified in the path | 1 v    |
 | The value of the language is hardcoded, not dynamically taken from the path   | -1     |
-| Total                                                                         | 9      |
+| Total                                                                         | 9 9    |
 
 **Note:** If you are unable to determine the for language in the path using the route parameter, hardcode a value for language and implement the behaviour that way
 
@@ -200,17 +196,17 @@ https://my-json-server.typicode.com/Codaisseur/listings-agents-data/listings
 
 | Criteria                                                                   | Points |
 | -------------------------------------------------------------------------- | ------ |
-| A form is displayed on the schedule a view page                            | 1      |
-| The form has inputs for name, email, phone                                 | 0.5    |
-| The form has a select input for listing address, and a date input for date | 0.5    |
-| The state of the form is controlled using React useState hook(s)           | 2      |
-| When the form is submitted, the user input for all form fields is logged   | 2      |
-| When the form has been submitted, we show a success message to the user    | 2      |
-| The options for listing addresses are fetched from the api, not hardcoded  | 2      |
-| The success message is an alert, prompt or confirm popup                   | -1     |
-| There is a warning in the console regarding "key" props                    | -1     |
-| Submitting the form refreshes the page                                     | -2     |
-| Total                                                                      | 10     |
+| A form is displayed on the schedule a view page                            | 1 v    |
+| The form has inputs for name, email, phone                                 | 0.5 v  |
+| The form has a select input for listing address, and a date input for date | 0.5 v  |
+| The state of the form is controlled using React useState hook(s)           | 2 v    |
+| When the form is submitted, the user input for all form fields is logged   | 2 v    |
+| When the form has been submitted, we show a success message to the user    | 2 v    |
+| The options for listing addresses are fetched from the api, not hardcoded  | 2 v    |
+| The success message is an alert, prompt or confirm popup                   | -1 x   |
+| There is a warning in the console regarding "key" props                    | -1 x   |
+| Submitting the form refreshes the page                                     | -2 x   |
+| Total                                                                      | 10 10  |
 
 ### 5. As a customer I want to be able to view and filter property listings, so I can find a property according to my needs
 
@@ -228,19 +224,19 @@ https://my-json-server.typicode.com/Codaisseur/listings-agents-data/listings
 
 | Criteria                                                             | Points |
 | -------------------------------------------------------------------- | ------ |
-| The address, price, m2, bedRooms, is displayed for all listings      | 1      |
-| The data for each listing is displayed using a separate component    | 2      |
-| The data is displayed using .map                                     | 1      |
-| There is a warning in the console regarding "key" props              | -1     |
-| Listings are sorted by priceEuro                                     | 1      |
-| The data is fetched from the api, not hardcoded                      | 1      |
-| There are 2 sliders, one for budget & one for floor space            | 1      |
-| The slider for budget has a min and max value                        | 0.5    |
-| The slider for floor space has a min and max value                   | 0.5    |
+| The address, price, m2, bedRooms, is displayed for all listings      | 1 v    |
+| The data for each listing is displayed using a separate component    | 2 v    |
+| The data is displayed using .map                                     | 1 v    |
+| There is a warning in the console regarding "key" props              | -1 x   |
+| Listings are sorted by priceEuro                                     | 1 v    |
+| The data is fetched from the api, not hardcoded                      | 1 v    |
+| There are 2 sliders, one for budget & one for floor space            | 1 v    |
+| The slider for budget has a min and max value                        | 0.5 v  |
+| The slider for floor space has a min and max value                   | 0.5 v  |
 | Moving a slider for budget filters listings which are too expensive  | 2      |
 | Moving a slider for floor space filters listings which are too small | 2      |
-| The properties are filtered using something other than .filter       | -2     |
-| The min and max values for the sliders are dynamic, not hardcoded    | 3      |
+| The properties are filtered using something other than .filter       | -2 x   |
+| The min and max values for the sliders are dynamic, not hardcoded    | 3 v    |
 | Total                                                                | 15     |
 
 ### 6. Express server
@@ -312,12 +308,12 @@ Example:
 
 | Criteria                                                                                                       | Points |
 | -------------------------------------------------------------------------------------------------------------- | ------ |
-| There is a file called server.js & a package.json, in your server repository                                   | 0.5    |
-| package.json contains a script called `server`, which runs the server.js file with node                        | 0.5    |
-| package.json contains a script called `server-dev`, which runs the server.js file with nodemon                 | 0.5    |
-| running server.js starts an express server which listens on port 4000                                          | 1      |
-| Requests to http://localhost:4000/listings get a response of an array with 10 listings                         | 1      |
-| Requests to http://localhost:4000/agents get a response of an array of 2 agents                                | 1      |
+| There is a file called server.js & a package.json, in your server repository                                   | 0.5 v  |
+| package.json contains a script called `server`, which runs the server.js file with node                        | 0.5 v  |
+| package.json contains a script called `server-dev`, which runs the server.js file with nodemon                 | 0.5 v  |
+| running server.js starts an express server which listens on port 4000                                          | 1 v    |
+| Requests to http://localhost:4000/listings get a response of an array with 10 listings                         | 1 v    |
+| Requests to http://localhost:4000/agents get a response of an array of 2 agents                                | 1 v    |
 | Requests to http://localhost:4000/agents/:language get a response of an array of agents speaking that language | 2.5    |
 | More than 1 route is used to implement http://localhost:4000/agents/:language                                  | -1     |
 | Total                                                                                                          | 7      |
@@ -328,8 +324,8 @@ Example:
 
 | Criteria                                                               | Points |
 | ---------------------------------------------------------------------- | ------ |
-| Student has applied at least 5 style rules                             | 1      |
-| Styles are split up across at least 2 css files created by the student | 1      |
+| Student has applied at least 5 style rules                             | 1 v    |
+| Styles are split up across at least 2 css files created by the student | 1 v    |
 | Total                                                                  | 2      |
 
 ### 8. Finishing up

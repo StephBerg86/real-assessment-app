@@ -8,7 +8,7 @@ export default function ButtonsHP() {
   const [language, setLanguage] = useState("");
 
   const changeLanguage = (event) => {
-    if (event.target.value === "english") {
+    if (event.target.value === "English") {
       setFirstButton("See listings");
       setSecondButton("About us ");
       setLanguage("English");
