@@ -5,10 +5,6 @@ import Agent from "./Agent";
 import ButtonAU from "../components/ButtonAU";
 
 export default function AboutLanguage() {
-  // const thisLanguage = languages.filter(
-  //   (language) => language.lang === languageId
-  // );
-
   const [agent, setAgent] = useState([]);
   useEffect(() => {
     const url =
@@ -23,22 +19,22 @@ export default function AboutLanguage() {
   const { languageId } = useParams();
   console.log("languageID", languageId);
 
-  const filterLanguage = agent.filter((agents) => {
+  const filterAgent = agent.filter((agents) => {
     if (agents.languages.includes(languageId)) {
       return agent;
     } else {
       return false;
     }
   });
-  console.log("filterlanguage", filterLanguage);
+  console.log("filterAgent", filterAgent);
 
   if (languageId === "English") {
     return (
       <div>
         About English
         <br />
-        <h1>About</h1>
-        {agent.map((agent) => {
+        <h1>About us</h1>
+        {filterAgent.map((agent) => {
           return (
             <Agent
               key={agent.id}
@@ -50,7 +46,7 @@ export default function AboutLanguage() {
             />
           );
         })}
-        <ButtonAU />;
+        <ButtonAU />
       </div>
     );
   } else if (languageId === "Dutch") {
@@ -58,8 +54,8 @@ export default function AboutLanguage() {
       <div>
         about dutch
         <br />
-        <h1>About</h1>
-        {agent.map((agent) => {
+        <h1>About us</h1>
+        {filterAgent.map((agent) => {
           return (
             <Agent
               key={agent.id}
@@ -71,7 +67,7 @@ export default function AboutLanguage() {
             />
           );
         })}
-        <ButtonAU />;
+        <ButtonAU />
       </div>
     );
   } else if (languageId === "German") {
@@ -79,8 +75,8 @@ export default function AboutLanguage() {
       <div>
         about german
         <br />
-        <h1>About</h1>
-        {agent.map((agent) => {
+        <h1>About us</h1>
+        {filterAgent.map((agent) => {
           return (
             <Agent
               key={agent.id}
@@ -92,7 +88,7 @@ export default function AboutLanguage() {
             />
           );
         })}
-        <ButtonAU />;
+        <ButtonAU />
       </div>
     );
   } else {
@@ -100,8 +96,8 @@ export default function AboutLanguage() {
       <div>
         Spanish
         <br />
-        <h1>About</h1>
-        {agent.map((agent) => {
+        <h1>About us</h1>
+        {filterAgent.map((agent) => {
           return (
             <Agent
               key={agent.id}
@@ -113,7 +109,7 @@ export default function AboutLanguage() {
             />
           );
         })}
-        <ButtonAU />;
+        <ButtonAU />
       </div>
     );
   }

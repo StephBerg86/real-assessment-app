@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Agent from "../components/Agent";
 import ButtonAU from "../components/ButtonAU";
+import "../styling/AboutUs.css";
 
 export default function AboutUs() {
   const [agent, setAgent] = useState([]);
@@ -19,7 +20,7 @@ export default function AboutUs() {
   return (
     <div>
       <br />
-      <h1>About</h1>
+      <h1>About us</h1>
       {agent.map((agent) => {
         return (
           <Agent
@@ -32,7 +33,7 @@ export default function AboutUs() {
           />
         );
       })}
-      <ButtonAU />;
+      <ButtonAU />
     </div>
   );
 }
