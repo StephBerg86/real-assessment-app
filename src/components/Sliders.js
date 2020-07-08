@@ -8,13 +8,7 @@ export default function Sliders({ minP, maxP, minM, maxM, onChange }) {
         <br />
         <label>
           Min. 161k
-          <input
-            type="range"
-            min={minP}
-            max={maxP}
-            // value="price"
-            onChange={onChange}
-          />
+          <input type="range" min={minP} max={maxP} onChange={onChange} />
           Max. 886k
         </label>
       </form>

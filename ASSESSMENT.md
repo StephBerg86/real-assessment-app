@@ -1,16 +1,16 @@
 ### Self assessment
 
-| Section             | Max Points | Self  | Evaluator |
-| ------------------- | ---------- | ----- | --------- |
-| 1 Navigation        | 5          | 5/5   | 0/5       |
-| 2 Home page buttons | 6          | 6/6   | 0/6       |
-| 3 About us          | 9          | 0/9   | 0/9       |
-| 4 Book viewing      | 10         | 10/10 | 0/10      |
-| 5 View listings     | 15         | 0/15  | 0/15      |
-| 6 Express server    | 7          | 0/7   | 0/7       |
-| 7 Styling           | 2          | 2/2   | 0/2       |
-| 8 Finishing up      | 6          | 6/6   | 0/6       |
-| Total               | 60         | 0/60  | 0/60      |
+| Section             | Max Points | Self    | Evaluator |
+| ------------------- | ---------- | ------- | --------- |
+| 1 Navigation        | 5          | 5/5     | 0/5       |
+| 2 Home page buttons | 6          | 6/6     | 0/6       |
+| 3 About us          | 9          | 9/9     | 0/9       |
+| 4 Book viewing      | 10         | 10/10   | 0/10      |
+| 5 View listings     | 15         | 15/15   | 0/15      |
+| 6 Express server    | 7          | 4.5/7   | 0/7       |
+| 7 Styling           | 2          | 2/2     | 0/2       |
+| 8 Finishing up      | 6          | 6/6     | 0/6       |
+| Total               | 60         | 57.5/60 | 0/60      |
 
 | 1. Navigation - Criteria                                                 | Points | Self | Evaluator |
 | ------------------------------------------------------------------------ | ------ | ---- | --------- |
@@ -58,32 +58,32 @@
 
 | 5. View listings - Criteria                                          | Points | Self | Evaluator |
 | -------------------------------------------------------------------- | ------ | ---- | --------- |
-| The address, price, m2, bedRooms, is displayed for all listings      | 1      |      |           |
-| The data for each listing is displayed using a separate component    | 2      |      |           |
-| The data is displayed using .map                                     | 1      |      |           |
-| There is a warning in the console regarding "key" props              | -1     |      |           |
-| Listings are sorted by priceEuro                                     | 1      |      |           |
-| The data is fetched from the api, not hardcoded                      | 1      |      |           |
-| There are 2 sliders, one for budget & one for floor space            | 1      |      |           |
-| The slider for budget has a min and max value                        | 0.5    |      |           |
-| The slider for floor space has a min and max value                   | 0.5    |      |           |
-| Moving a slider for budget filters listings which are too expensive  | 2      |      |           |
-| Moving a slider for floor space filters listings which are too small | 2      |      |           |
-| The properties are filtered using something other than .filter       | -2     |      |           |
-| The min and max values for the sliders are dynamic, not hardcoded    | 3      |      |           |
-| Total                                                                | 15     |      |           |
+| The address, price, m2, bedRooms, is displayed for all listings      | 1      | 1    |           |
+| The data for each listing is displayed using a separate component    | 2      | 2    |           |
+| The data is displayed using .map                                     | 1      | 1    |           |
+| There is a warning in the console regarding "key" props              | -1     | 0    |           |
+| Listings are sorted by priceEuro                                     | 1      | 1    |           |
+| The data is fetched from the api, not hardcoded                      | 1      | 1    |           |
+| There are 2 sliders, one for budget & one for floor space            | 1      | 1    |           |
+| The slider for budget has a min and max value                        | 0.5    | 0.5  |           |
+| The slider for floor space has a min and max value                   | 0.5    | 0.5  |           |
+| Moving a slider for budget filters listings which are too expensive  | 2      | 2    |           |
+| Moving a slider for floor space filters listings which are too small | 2      | 2    |           |
+| The properties are filtered using something other than .filter       | -2     | 0    |           |
+| The min and max values for the sliders are dynamic, not hardcoded    | 3      | 3    |           |
+| Total                                                                | 15     | 15   |           |
 
 | 6. Express server - Criteria                                                                                   | Points | Self | Evaluator |
 | -------------------------------------------------------------------------------------------------------------- | ------ | ---- | --------- |
-| There is a file called server.js & a package.json, in your server repository                                   | 0.5    |      |           |
-| package.json contains a script called `server`, which runs the server.js file with node                        | 0.5    |      |           |
-| package.json contains a script called `server-dev`, which runs the server.js file with nodemon                 | 0.5    |      |           |
-| running server.js starts an express server which listens on port 4000                                          | 1      |      |           |
-| Requests to http://localhost:4000/listings get a response of an array with 10 listings                         | 1      |      |           |
-| Requests to http://localhost:4000/agents get a response of an array of 2 agents                                | 1      |      |           |
+| There is a file called server.js & a package.json, in your server repository                                   | 0.5    | 0.5  |           |
+| package.json contains a script called `server`, which runs the server.js file with node                        | 0.5    | 0.5  |           |
+| package.json contains a script called `server-dev`, which runs the server.js file with nodemon                 | 0.5    | 0.5  |           |
+| running server.js starts an express server which listens on port 4000                                          | 1      | 1    |           |
+| Requests to http://localhost:4000/listings get a response of an array with 10 listings                         | 1      | 1    |           |
+| Requests to http://localhost:4000/agents get a response of an array of 2 agents                                | 1      | 1    |           |
 | Requests to http://localhost:4000/agents/:language get a response of an array of agents speaking that language | 2.5    |      |           |
-| More than 1 route is used to implement http://localhost:4000/agents/:language                                  | -1.5   |      |           |
-| Total                                                                                                          | 7      |      |           |
+| More than 1 route is used to implement http://localhost:4000/agents/:language                                  | -1.5   | 0    |           |
+| Total                                                                                                          | 7      | 4.5  |           |
 
 | 7. Styling - Criteria                                                  | Points | Self | Evaluator |
 | ---------------------------------------------------------------------- | ------ | ---- | --------- |
